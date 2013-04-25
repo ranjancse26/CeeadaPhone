@@ -1,0 +1,39 @@
+﻿USE [ceeada_db]
+GO
+
+/****** Object:  Table [ceeada].[Booking]    Script Date: 04/21/2013 11:13:30 ******/
+SET ANSI_NULLS OFF
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [ceeada].[Booking](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[FirstName] [nvarchar](50) NOT NULL,
+	[LastName] [nvarchar](30) NOT NULL,
+	[Email] [varchar](50) NULL,
+	[Phone] [varchar](15) NULL,
+	[Date] [varchar](15) NULL,
+	[NumberOfPassengers] [int] NULL,
+	[CarType] [varchar](20) NULL,
+	[PickupTime] [varchar](10) NULL,
+	[Services] [varchar](50) NULL,
+	[SpeacialRequests] [varchar](500) NULL,
+	[Lat] [varchar](10),
+	[Lang] [varchar](10)
+ CONSTRAINT [PrimaryKey_5d0f7912-2685-4055-93f5-66f8f53883f4] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON)
+)
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
